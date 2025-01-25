@@ -24,11 +24,11 @@ import javax.imageio.ImageIO;
 //   - Mark points with 'Q' key for debugging.
 //   - Traffic simulation (vehicles + traffic lights).
 //   - Timers and collision avoidance, route logic, etc.
-//   - Buttons for Start, Stop, Pause, Resume, Clear. 
+//   - Buttons for Start, Stop, Pause, Resume, Clear (OPTIONAL). 
 //   - A field + “Enter” button to set the max number of vehicles.
 //   - Speed factor control from a combo box (0.5x..5x).
 //   - “Stop” = clear vehicles & halt timer, user must Start again.
-//   - “Clear” = remove vehicles but keep timer going and lights cycling.
+//   - “Clear” = remove vehicles but keep timer going and lights cycling. (OPTIONAL)
 //   - If a route ends “NEAR TRAFFIC LIGHT,” vehicles must wait if
 //     it’s red. 
 //   - “END OF ROAD” means the vehicle is removed upon reaching that

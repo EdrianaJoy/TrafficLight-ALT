@@ -22,7 +22,7 @@ import java.awt.*;
  *  - Creates a JFrame
  *  - Adds an ImagePanel (the main simulation code) in the center
  *  - Builds a top control panel with "Start", "Stop", "Pause",
- *    "Resume", and "Clear" buttons, plus a "Max Vehicles" field
+ *    "Resume", and "Clear" (OPTIONAL) buttons, plus a "Max Vehicles" field
  *    with "Enter" button, plus a speed factor drop-down (0.5x..5x).
  *  - Sets the frame size to match the image exactly, then disables
  *    resizing.
@@ -139,7 +139,7 @@ public class Prog {
 // ---------------------------------------------------------------------
 // The GUI will appear, sized exactly to the background image plus the
 // top control panel. The top panel has five buttons: Start, Stop,
-// Pause, Resume, Clear; plus a “Max Vehicles” text field with an
+// Pause, Resume, Clear (OPTIONAL); plus a “Max Vehicles” text field with an
 // “Enter” button, plus a speed factor drop-down (0.5x..5x).
 // 
 //   • Start: starts the simulation timer (vehicles spawn, traffic
@@ -149,7 +149,7 @@ public class Prog {
 //   • Pause: stops the simulation timer but doesn’t remove vehicles.
 //   • Resume: continues from paused state.
 //   • Clear: removes vehicles but keeps the simulation timer going
-//     and traffic lights cycling.
+//     and traffic lights cycling. (OPTIONAL)
 //   • Max Vehicles: sets the maximum; if set to 0, no new vehicles
 //     appear. 
 //   • Enter: sets that maximum. 
