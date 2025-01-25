@@ -14,7 +14,7 @@ public class Main extends JFrame {
 
         // ========== LEFT PANEL (map or image) ==========
         JPanel mapPanel = new JPanel(new BorderLayout());
-        JLabel imageLabel = new JLabel(new ImageIcon("map.png"));
+        JLabel imageLabel = new JLabel(new ImageIcon("img-map.png"));
         imageLabel.setHorizontalAlignment(JLabel.CENTER);
         mapPanel.add(imageLabel, BorderLayout.CENTER);
         add(mapPanel, BorderLayout.CENTER);
@@ -33,7 +33,7 @@ public class Main extends JFrame {
         welcomeLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // --- Load & scale the traffic light icon ---
-        ImageIcon trafficIcon = new ImageIcon("2.png"); // Adjust path as needed
+        ImageIcon trafficIcon = new ImageIcon("traffic-light.png"); // Adjust path as needed
         Image scaledImg = trafficIcon.getImage().getScaledInstance(60, 80, Image.SCALE_SMOOTH);
         trafficIcon = new ImageIcon(scaledImg);
         welcomeLabel.setIcon(trafficIcon);
@@ -55,7 +55,7 @@ public class Main extends JFrame {
         groupMembersTitleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // -- Names of the group members --
-        groupMembersLabel = new JLabel("<html>Abram, Alfaro<br>Damaso, Edriana Joy<br>Estonillo, Julius Evan<br>Xavier, Mikhail Gabriel</html>");
+        groupMembersLabel = new JLabel("<html>Abram, Alfaro<br>Damaso, Edriana Joy<br>Estonilo, Julius Evan<br>Xavier, Mikhail Gabriel</html>");
         groupMembersLabel.setForeground(Color.WHITE);
         groupMembersLabel.setFont(new Font("Arial", Font.PLAIN, 18));
         groupMembersLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -76,13 +76,12 @@ public class Main extends JFrame {
         nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // -- Placeholder action listener for next button --
-        nextButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(
-                Main.this,
-                "You clicked the Next button.",
-                "Next",
-                JOptionPane.INFORMATION_MESSAGE
-            );
+        nextButton.addActionListener(_ -> {
+            // Close the current window
+            Main.this.dispose();
+
+            // Launch the ImageZoomAndPan simulation
+            SwingUtilities.invokeLater(() -> ImageZoomAndPan.main(null));
         });
 
         // ========== Add components to the RIGHT PANEL ==========
