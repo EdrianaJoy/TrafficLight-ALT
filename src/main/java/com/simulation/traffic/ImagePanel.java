@@ -311,15 +311,15 @@ public class ImagePanel extends JPanel {
       }
   }
 
-  public void clearVehicles() {
-      vehicles.clear();
-      waitList.clear();
-      selectedVehicle = null;
-      vehicleInfoLabel.setText("");
-      repaint();
+//   public void clearVehicles() {
+//       vehicles.clear();
+//       waitList.clear();
+//       selectedVehicle = null;
+//       vehicleInfoLabel.setText("");
+//       repaint();
 
-      specialVehicleInfoList.clear();
-  }
+//       specialVehicleInfoList.clear();
+//   }
 
   public void setMaxVehicles(int max) {
       maxVehicles = Math.max(0, max); // if 0 => no new spawns

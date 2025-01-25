@@ -57,7 +57,7 @@ public class ImageZoomAndPan {
             JButton stopBtn = new JButton("Stop");
             JButton pauseBtn = new JButton("Pause");
             JButton resumeBtn = new JButton("Resume");
-            JButton clearBtn = new JButton("Clear");
+            // JButton clearBtn = new JButton("Clear");
             
             JLabel maxVehLabel = new JLabel("Max Vehicles:");
             JTextField maxVehField = new JTextField("10", 5);
@@ -74,7 +74,7 @@ public class ImageZoomAndPan {
             controlPanel.add(stopBtn);
             controlPanel.add(pauseBtn);
             controlPanel.add(resumeBtn);
-            controlPanel.add(clearBtn);
+            // controlPanel.add(clearBtn);
             controlPanel.add(maxVehLabel);
             controlPanel.add(maxVehField);
             controlPanel.add(enterBtn);
@@ -89,7 +89,7 @@ public class ImageZoomAndPan {
             });
             pauseBtn.addActionListener(_ -> imagePanel.pauseSimulation());
             resumeBtn.addActionListener(_ -> imagePanel.resumeSimulation());
-            clearBtn.addActionListener(_ -> imagePanel.clearVehicles());
+            // clearBtn.addActionListener(_ -> imagePanel.clearVehicles());
 
             // “Enter” button to set max vehicles
             enterBtn.addActionListener(_ -> {
@@ -442,15 +442,15 @@ class ImagePanel extends JPanel {
         }
     }
 
-    public void clearVehicles() {
-        vehicles.clear();
-        waitList.clear();
-        selectedVehicle = null;
-        vehicleInfoLabel.setText("");
-        repaint();
+    // public void clearVehicles() {
+    //     vehicles.clear();
+    //     waitList.clear();
+    //     selectedVehicle = null;
+    //     vehicleInfoLabel.setText("");
+    //     repaint();
 
-        specialVehicleInfoList.clear();
-    }
+    //     specialVehicleInfoList.clear();
+    // }
 
     public void setMaxVehicles(int max) {
         maxVehicles = Math.max(0, max); // if 0 => no new spawns

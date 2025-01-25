@@ -48,7 +48,7 @@ public class Prog {
             JButton stopBtn = new JButton("Stop");
             JButton pauseBtn = new JButton("Pause");
             JButton resumeBtn = new JButton("Resume");
-            JButton clearBtn = new JButton("Clear");
+            // JButton clearBtn = new JButton("Clear");
             
             JLabel maxVehLabel = new JLabel("Max Vehicles:");
             JTextField maxVehField = new JTextField("10", 5);
@@ -65,7 +65,7 @@ public class Prog {
             controlPanel.add(stopBtn);
             controlPanel.add(pauseBtn);
             controlPanel.add(resumeBtn);
-            controlPanel.add(clearBtn);
+            // controlPanel.add(clearBtn);
             controlPanel.add(maxVehLabel);
             controlPanel.add(maxVehField);
             controlPanel.add(enterBtn);
@@ -80,7 +80,7 @@ public class Prog {
             });
             pauseBtn.addActionListener(_ -> imagePanel.pauseSimulation());
             resumeBtn.addActionListener(_ -> imagePanel.resumeSimulation());
-            clearBtn.addActionListener(_ -> imagePanel.clearVehicles());
+            // clearBtn.addActionListener(_ -> imagePanel.clearVehicles());
 
             // “Enter” button to set max vehicles
             enterBtn.addActionListener(_ -> {
