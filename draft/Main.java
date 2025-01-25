@@ -6,7 +6,7 @@ public class Main extends JFrame {
     private JButton nextButton;
 
     public Main() {
-        super("Traffic Flow Selection");
+        super("Welcome Page");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1000, 600);

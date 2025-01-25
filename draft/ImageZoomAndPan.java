@@ -40,7 +40,7 @@ public class ImageZoomAndPan {
     
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Image Zoom and Pan + Traffic Simulation");
+            JFrame frame = new JFrame("Traffic Simulation App");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             // Create the panel that shows the image + simulation
